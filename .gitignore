@@ -1,0 +1,23 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/MyApp.Infrastructure/obj/Debug/net7.0
+/MyApp.Infrastructure/obj
+/MyApp.WebAPI/obj/Debug/net7.0
+/MyApp.WebAPI/obj
+/MyApp.Domain/obj/Debug/net7.0
+/MyApp.Application/obj/Debug/net7.0
+/MyApp.Application/obj
+/MyApp.Domain/obj
+/.vs
+/MyApp.Infrastructure/Migrations
+/MyApp.WebAPI/MyApp.WebAPI.csproj.user
+/MyApp.WebAPI/bin/Debug/net7.0
+/MyApp.Infrastructure/bin/Debug/net7.0
+/MyApp.Domain/bin/Debug/net7.0
+/MyApp.Application/bin/Debug/net7.0
+.idea/.idea.MyApp/.idea/.name
+.idea/.idea.MyApp/.idea/vcs.xml
+.vscode/launch.json
+.vscode/tasks.json
