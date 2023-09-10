@@ -1,5 +1,5 @@
 ﻿using MyApp.Domain.DTOs;
 
-namespace MyApp.Application.ResponseDTOs;
+namespace MyApp.Domain.DTOs.ResponseDTOs;
 
 public record ProductListPageDataResponse(List<ProductDto> products, List<SelectDto> categories);

@@ -8,8 +8,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MyApp.Application.ResponseDTOs;
 using MyApp.Domain.DTOs;
+using MyApp.Domain.DTOs.ResponseDTOs;
 
 namespace MyApp.Application.CommandHandlers
 {

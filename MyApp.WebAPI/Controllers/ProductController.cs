@@ -2,8 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using MyApp.Application.Commands;
 using MyApp.Application.Queries;
-using MyApp.Application.ResponseDTOs;
 using MyApp.Domain.DTOs;
+using MyApp.Domain.DTOs.ResponseDTOs;
 
 namespace MyApp.WebAPI.Controllers;
 
