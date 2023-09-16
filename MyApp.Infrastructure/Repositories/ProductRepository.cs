@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MyApp.Domain.Entities;
 using MyApp.Infrastructure.Data;
+using MyApp.Infrastructure.Repositories.Extensions;
 using MyApp.Infrastructure.Repositories.Interfaces;
 
 namespace MyApp.Infrastructure.Repositories;
@@ -13,9 +14,10 @@ public class ProductRepository : IProductRepository
     {
         _context = context;
     }
-    public async Task<List<Product>> GetProductsAsync()
+    public async Task<List<Product>> GetProductsAsync(string? searchTerm )
     {
         List<Product> products = await _context.Products
+            .Search(searchTerm)
             .Include(x => x.Category).ToListAsync();
         return products;
     }

@@ -25,7 +25,7 @@ namespace MyApp.Application.QueryHandlers
         public async Task<ProductListPageDataResponse> Handle(GetProductsQuery request, CancellationToken cancellationToken)
         {
             
-            List<ProductDto> productDtos =  _mapper.Map<List<ProductDto>>(await _productRepository.GetProductsAsync());
+            List<ProductDto> productDtos =  _mapper.Map<List<ProductDto>>(await _productRepository.GetProductsAsync(request.searchTerm));
             List<CategoryDto> categoryDtos = _mapper.Map<List<CategoryDto>>(await _productRepository.GetCategoriesAsync());
             // map categoryDtos to SelectDtos
             List<SelectDto> selectDtos = categoryDtos.Select(c => new SelectDto { Value = c.Id, Label = c.Name }).ToList();

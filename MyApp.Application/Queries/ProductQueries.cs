@@ -4,5 +4,5 @@ using MyApp.Domain.DTOs.ResponseDTOs;
 namespace MyApp.Application.Queries
 {
     public record GetProductByIdQuery(int Id) : IRequest<ProductPageDataResponse>;
-    public record GetProductsQuery() : IRequest<ProductListPageDataResponse>;
+    public record GetProductsQuery(string? searchTerm) : IRequest<ProductListPageDataResponse>;
 }

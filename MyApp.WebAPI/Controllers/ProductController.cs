@@ -28,10 +28,10 @@ public class ProductController : ControllerBase
     }
     
     [HttpGet]
-    public async Task<IActionResult> GetProductsAsync()
+    public async Task<IActionResult> GetProductsAsync([FromQuery]string? searchTerm)
     {
         //List<ProductDto>? productDtos = await _productService.GetProductsAsync();
-        ProductListPageDataResponse response = await _mediator.Send(new GetProductsQuery());
+        ProductListPageDataResponse response = await _mediator.Send(new GetProductsQuery(searchTerm));
         return Ok(response);
     }
 

@@ -4,7 +4,7 @@ namespace MyApp.Infrastructure.Repositories.Interfaces;
 
 public interface IProductRepository
 {
-    Task<List<Product>> GetProductsAsync();
+    Task<List<Product>> GetProductsAsync(string? searchTerm);
     Task<Product> GetProductByIdAsync(int id);
     Task<Product> CreateProductAsync(Product product);
     Task<Product> UpdateProductAsync(Product product);
