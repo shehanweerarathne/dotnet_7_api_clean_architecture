@@ -21,3 +21,5 @@
 .idea/.idea.MyApp/.idea/vcs.xml
 .vscode/launch.json
 .vscode/tasks.json
+/MyApp.WebAPI/wwwroot/images
+/MyApp.WebAPI/appsettings.json
